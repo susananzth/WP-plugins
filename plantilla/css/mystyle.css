@@ -14,6 +14,7 @@ font-family: 'Nunito', sans-serif;
 }
 *{
 	font-family: Nunito;
+	font-weight: 700;
 	margin: 0; padding: 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -29,13 +30,16 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body{
-	background-color: #f5ecef;
+	background-color: #fdb837;
 	font-size: 16px;
 	width: 100%;
-	color: #4c4c4c !important;
+	color: #fff !important;
 }
 nav{
 	background: #fff;
+	-webkit-box-shadow: 1px 3px 10px -3px rgba(84,84,84,1);
+	-moz-box-shadow: 1px 3px 10px -3px rgba(84,84,84,1);
+	box-shadow: 1px 3px 10px -3px rgba(84,84,84,1);
 	display: block;
 	height: 3rem;
 	position: relative;
@@ -49,7 +53,7 @@ a{
 	color: inherit;
 }
 .logo{
-	background: #fff;
+	background: #ffe47b;
 	height: 2rem;
 	left: 0.5rem;
 	position: absolute;
@@ -72,7 +76,7 @@ a{
 	top: 0.85rem;
 }
 .menubtn{
-	background: #fff;
+	background: #fdb837;
 	cursor:pointer;
 	position: absolute;
 	right: 1rem;
@@ -91,7 +95,7 @@ a{
   margin: 0 auto;
 }
 .sidenav {
-	background-color: #f5ecef;
+	background-color: #fdb837;
     height: 100%;
     overflow-x: hidden;
     position: fixed;
@@ -120,11 +124,15 @@ a{
 	padding-top: 5rem;
 }
 .bg{
-	background: url("../img/bg4.jpg");
+	background: url("../img/bg5.jpg");
 	background-size: cover;
 	background-position: center;
 	height: 93%;
-	opacity: 0.65;
+}
+header{
+	-webkit-box-shadow: 1px 3px 10px -3px rgba(84,84,84,1);
+	-moz-box-shadow: 1px 3px 10px -3px rgba(84,84,84,1);
+	box-shadow: 1px 3px 10px -3px rgba(84,84,84,1);
 }
 .header-title{
 	height: 100%;
@@ -206,14 +214,21 @@ h1, h5, h6{
 }
 .form{
 	margin: 0 auto;
-	padding: 2rem 1rem 1rem 1rem;
+	padding: 10rem 1rem 1rem 1rem;
 	width: 80%;
-}
-form{
-	margin-top: 0.5rem;
 }
 form label{
 	display: block;
+}
+.text-left{
+	text-align: left;
+}
+.remember{
+	height: 15px;
+    width: 15px;  
+}
+.inline-flex{
+	display: inline-flex;
 }
 input{
 	font-size: inherit;
@@ -221,8 +236,15 @@ input{
 	margin: 1% 0;
 	width: 100%;
 }
+section{
+	padding: 2rem;
+    text-align: justify;
+}
 .article{
     padding: 1rem;
+}
+.paragraph{
+	padding: 2rem 0;
 }
 footer{
 	background: #635c5e;
@@ -242,22 +264,53 @@ footer{
 }
 .email:before {
   content: "\f0e0";
-.flex-box{
-	display: flex;
-    display: inline-flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    flex-wrap: wrap;
 }
 .text-center{
 	text-align: center;
 }
-@media (min-width: 300px) and  (orientation: landscape){
+@media (min-width: 300px) and (orientation: landscape){
 	.menu{
 		font-size: 3rem;
     	padding-top: 2rem;
+	}
+	.bg{
+		background-position: top;
+	}
+	.form {
+	    padding: 0 0 1rem 0;
+	    width: 40%;
+	}
+	.article {
+	    padding: 0 0 1rem 0;
+	    width: 40%;
+	    margin: 0 auto;
+	}
+	.header-title{
+		padding: 12rem 0 0 0;
+	}
+	form{
+	    font-size: 0.9rem;
+		margin-top: 0.5rem;
+	}
+	.p{
+	    text-align: justify;
+	    font-size: 0.9rem;
+	    margin: 0.5rem 0;
+	}
+	.animated-1s-sm-landscape {
+	  -webkit-animation-duration: 1s;
+	  animation-duration: 1s;
+	  -webkit-animation-fill-mode: both;
+	  animation-fill-mode: both;
+	}
+	.flex-box-sm-landscape{
+	    display: flex;
+	    display: inline-flex;
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    flex-wrap: wrap;
 	}
 }
 @media (min-width: 768px) {
@@ -267,6 +320,23 @@ footer{
 	}
 	.menu a{
 		padding: 1rem 0;
+	}
+	.form {
+	    padding: 5rem 1rem 1rem 1rem;
+	    width: 40%;
+	}
+	.article {
+	    padding: 1rem;
+	    width: 40%;
+	}
+	.flex-box-sm-landscape{
+	    display: flex;
+	    display: inline-flex;
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    flex-wrap: wrap;
 	}
 	h1{
 		font-size: 3.5rem;
@@ -340,6 +410,6 @@ footer{
 }
 @media (min-width: 1200px) {
 	footer{
-		padding: 4rem 9rem;
+		padding: 1rem 1rem;
 	}
 }

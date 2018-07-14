@@ -10,6 +10,9 @@ $(document).ready(function(){
     });
     $(".form").addClass('animated-0-8s fadeInUp');
     $('.article').addClass('animated-1-1s fadeInUp');
+    $(".mission ").addClass('animated-0-8s fadeInUp');
+    $('.vision').addClass('animated-0-9s fadeInUp');
+    $(".work").addClass('animated-1s fadeInUp');
 	$('form').on('submit', sendForm);
         function sendForm(ev) {
             ev.preventDefault();
