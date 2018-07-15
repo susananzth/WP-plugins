@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Network Taxi | WIN</title>
 	<link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Nunito:600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300" rel="stylesheet">
 	<link rel="icon" type="text/css" href="img/favicon.ico"/>
 </head>
 <body>
@@ -38,7 +38,7 @@
 				<form id="sesion-form" class="text-left">
 					<label for="user"><input id="user" type="text" name="user" placeholder="Usuario"></label>
 					<label for="password"><input id="password" type="password" name="password" placeholder="Contraseña"></label>
-					<label for="remember" class="inline-flex"><input type="checkbox" name="remember" class="remember"> Recordar mis datos</label>
+					<label for="remember" class="inline-flex remember"><input type="checkbox" name="remember" class="check-rem"> Recordar mis datos</label>
 					<input id="send" type="submit" name="send" value="Entrar">
 					<a href="#">Olvidé mi contraseña</a>
 				</form>

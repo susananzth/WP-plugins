@@ -133,10 +133,11 @@ header{
 	-webkit-box-shadow: 1px 3px 10px -3px rgba(84,84,84,1);
 	-moz-box-shadow: 1px 3px 10px -3px rgba(84,84,84,1);
 	box-shadow: 1px 3px 10px -3px rgba(84,84,84,1);
+	text-shadow: 2px 2px 5px #6b6b6b;
 }
 .header-title{
 	height: 100%;
-	padding: 8rem 0 0 0;
+	padding: 18.5rem 0 0 0;
     position: absolute;
     text-align: center;
     top: 0;
@@ -213,9 +214,13 @@ h1, h5, h6{
   animation-name: fadeInUp;
 }
 .form{
+	background: rgba(255, 255, 255, 0.28);
+    border-radius: 6px;
+    color: black;
+    font-size: 18px;
 	margin: 0 auto;
-	padding: 10rem 1rem 1rem 1rem;
-	width: 80%;
+	padding: 0.1rem 2rem 1rem 2rem;
+    width: 90%;
 }
 form label{
 	display: block;
@@ -224,8 +229,14 @@ form label{
 	text-align: left;
 }
 .remember{
+	margin: 0.3rem 0;
+}
+.check-rem{
 	height: 15px;
-    width: 15px;  
+    width: 15px;
+}
+.forgot-pass{
+	margin: 0.3rem 0 0 0;
 }
 .inline-flex{
 	display: inline-flex;
@@ -277,16 +288,18 @@ footer{
 		background-position: top;
 	}
 	.form {
-	    padding: 0 0 1rem 0;
-	    width: 40%;
-	}
+    	padding: 0.5rem 1rem 1rem 1rem;
+	    width: 60%;
+	    display: table;
+	    margin: 0 0 0 15rem;
+    }
 	.article {
 	    padding: 0 0 1rem 0;
-	    width: 40%;
-	    margin: 0 auto;
+	    width: 60%;
+    	margin: 2rem 0 0 15rem;
 	}
 	.header-title{
-		padding: 12rem 0 0 0;
+		padding: 7rem 0 0 0;
 	}
 	form{
 	    font-size: 0.9rem;
@@ -304,13 +317,7 @@ footer{
 	  animation-fill-mode: both;
 	}
 	.flex-box-sm-landscape{
-	    display: flex;
-	    display: inline-flex;
-	    display: -webkit-box;
-	    display: -moz-box;
-	    display: -ms-flexbox;
-	    display: -webkit-flex;
-	    flex-wrap: wrap;
+	    overflow: scroll;
 	}
 }
 @media (min-width: 768px) {
