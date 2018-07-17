@@ -1,7 +1,9 @@
 	<footer>
 		<div class="text-center">
-			<figure class="logo-app"><img src="img/app.png"></figure>
-			<figure class="logo-app"><img src="img/play.png"></figure>
+			<figure class="logo-app">
+				<a href="#" target="_blank"><img src="img/app.png" title="Descargar desde App Store"></a></figure>
+			<figure class="logo-app">
+				<a href="https://play.google.com/store/apps/details?id=com.taxiwin" target="_blank"><img src="img/play.png" title="Descargar desde Google PLay"></a></figure>
 		</div>
 		
 		<address class="contact text-center">
