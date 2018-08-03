@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); ?><!-- Call to header partial -->
 			
 			<section id="main-content">
 				<article class="post resume">
@@ -56,6 +56,6 @@
 					<a href="" >Recientes &rarr;</a>
 				</div>
 			</section><!-- /#main-content -->
-			<?php get_sidebar(); ?>
+			<?php get_sidebar(); ?><!-- Call to sidebar partial -->
 			
-<?php get_footer(); ?>
+<?php get_footer(); ?><!-- Call to footer partial -->

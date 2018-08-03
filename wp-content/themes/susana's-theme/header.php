@@ -3,7 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>Susana's Theme WordPress | by Susana Piñero</title>
-	<link rel="stylesheet" href="style.css" >
+	
+    <?php wp_head(); ?>
+    <!-- Aquí llamo los script para cargar y ejecutar todas las funciones de cabecera. |
+         I call the script to load and execute all the header functions.-->
 </head>
 <body>
 	<div id="global-container">
