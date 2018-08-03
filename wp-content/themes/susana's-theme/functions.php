@@ -12,5 +12,7 @@ function apk_load_styles() {
 add_action('wp_enqueue_scripts', 'apk_load_styles');
     /* Asocio la función a la acción 'wp_enqueue_scripts'. |
        I associate the function to the action 'wp_enqueue_scripts'*/
+
+
 ?>
      

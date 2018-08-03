@@ -25,12 +25,8 @@
 		
 		<nav id="main-nav">
 			<ul class="menu">
-				<li><a href="">Home</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Portfolio</a></li>
-				<li><a href="">Abilities</a></li>
-				<li><a href="">Contact</a></li>
-				<li><a href="">Terms and Conditions</a></li>
+                <?php wp_list_pages('title_li='); ?>
+				<!-- Llamo a la función para que liste las páginas, con el parámetro indico que no quiero colocar un menu-title | I call the function to list the pages, with the parameter indicated that I do not want to put a menu-title -->
 			</ul>
 		</nav><!-- /#main-nav -->
 		

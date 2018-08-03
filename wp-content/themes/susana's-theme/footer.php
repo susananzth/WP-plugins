@@ -1,8 +1,8 @@
         </section><!-- /#global-content -->
-		
 		<footer id="main-footer">	
 			<div class="footer-copyright">
-				&copy; 2018 Susana's theme
+				&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>
+                <!-- Obtengo el año actual y el título de la página y lo imprimo | I get the current year and the title of the page and print it -->
 			</div><!-- /.footer-copyright -->
 		</footer><!-- footer -->
 	</div><!-- /#global-container -->
