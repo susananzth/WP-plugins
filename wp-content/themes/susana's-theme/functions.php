@@ -15,7 +15,7 @@ add_action('wp_enqueue_scripts', 'apk_load_styles');
 function apk_register_sidebar(){
     register_sidebar(array(
         'name' => __('Sidebar principal', 'apk'),
-        'id'   => 'main_sidebar',
+        'id' => 'main_sidebar',
         'description' => __('Este es el sidebar principal', 'apk'),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
