@@ -96,6 +96,13 @@ body {
   background: #f4f4f4;
   font-weight: 300;
 }
+#global-container {
+  width: 80%;
+  max-width: 1000px;
+  background: white;
+  margin: 30px auto 40px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 /*--------------------------------------------------------------
 # alignments
 --------------------------------------------------------------*/
@@ -381,13 +388,7 @@ h3 {
 .wp-caption {
   max-width: 100%;
 }
-#global-container {
-  width: 80%;
-  max-width: 1000px;
-  background: white;
-  margin: 30px auto 40px auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+
 #global-content {
   padding: 40px;
 }
