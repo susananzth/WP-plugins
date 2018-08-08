@@ -6,6 +6,11 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
             <!-- Sustituyo el "uft-8" por la función que trae la información de la instalacion de wordpress. |
             I substitute the "uft-8" for the function that brings the information of the wordpress installation.-->
+    <meta name="description" content="Guía para desarrollar una plantilla de wordpress."/>
+    <meta name="author" content="Susana Piñero"/>
+    <meta name="keywords" content="wordpress, theme, web developer, web design, frontend, backend"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 	<title> <?php wp_title(' | ', true, 'right') ?> <?php bloginfo('name'); ?> </title><!-- Susana's Theme WordPress | by Susana Piñero -->
             <!-- Imprimo el título de wordpress, coloco un separador, verdadero para que se imprima, lo ajusto a la derecha. Con bloginfo, obtengo el titulo de la página. |
             I print the wordpress title, I put a separator, true to be printed, I adjust it to the right. With bloginfo, I get the title of the page. -->
