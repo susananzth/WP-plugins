@@ -90,12 +90,6 @@ template{display: none;}
     format('truetype');
 }
 *{
-
-    color: #333333;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.2;
 	margin: 0; padding: 0;
 	-webkit-margin-before: 0;
     -webkit-margin-after: 0;
@@ -115,10 +109,15 @@ body {
     background: #f4f4f4;
 }
 #global-container {
-    width: 95%;
     background: white;
-    margin: 1rem auto 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 1rem auto 0 auto;
+    width: 95%;
 }
 .front-page #global-content {
     padding: 0;
@@ -203,16 +202,16 @@ h3 {
 
 /* #links ----------------------------------------------------*/
 a{
-  color: #6ea942;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  text-decoration: none;
+    color: #333333;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    text-decoration: none;
 }
 a:hover {
-  color: #568534;
+  color: yellow;
   text-decoration: underline;
 }
 a.btn {
@@ -233,17 +232,17 @@ a.btn:hover {
 /* #menu -----------------------------------------------------*/
 .menu,
 .menu li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: none;
 }
 .menu {
-  padding: 0 40px;
+    text-align: right;
 }
 .menu li {
-  display: inline-block;
-  position: relative;
+    display: inline-block;
+    position: relative;
 }
 .menu li a {
     color: white;
@@ -253,11 +252,12 @@ a.btn:hover {
     text-decoration: none;
 }
 .menu li a:hover {
-  background: #7ab94c;
+    background: #fbf057;
+    color: #333;
 }
 .menu li:hover > ul {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 .menu li ul {
   -webkit-transition: all 0.2s linear;

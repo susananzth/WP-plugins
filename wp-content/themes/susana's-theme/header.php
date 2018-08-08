@@ -21,19 +21,18 @@
 </head>
 <body>
 	<div id="global-container">
+        <nav id="main-nav">
+			<ul class="menu">
+                <?php wp_list_pages('title_li='); ?>
+				<!-- Llamo a la función para que liste las páginas, con el parámetro indico que no quiero colocar un menu-title | I call the function to list the pages, with the parameter indicated that I do not want to put a menu-title -->
+			</ul>
+		</nav><!-- /#main-nav -->
 		<header id="main-header">
 			<h1 class="site-title"> <?php bloginfo('name'); ?> </h1>
                 <!-- Obtengo el título de la página y lo imprimo | I get the title of the page and print it -->
 			<h2 class="site-description"> <?php bloginfo('description'); ?> </h2>
                 <!-- Obtengo la descripción de la página y lo imprimo | I get the description of the page and print it -->
 		</header><!-- /#main-header -->
-		
-		<nav id="main-nav">
-			<ul class="menu">
-                <?php wp_list_pages('title_li='); ?>
-				<!-- Llamo a la función para que liste las páginas, con el parámetro indico que no quiero colocar un menu-title | I call the function to list the pages, with the parameter indicated that I do not want to put a menu-title -->
-			</ul>
-		</nav><!-- /#main-nav -->
 		
 		<section id="global-content" class="cf">
             
