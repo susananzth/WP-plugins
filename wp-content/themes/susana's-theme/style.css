@@ -90,13 +90,12 @@ template{display: none;}
     format('truetype');
 }
 *{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
+
+    color: #333333;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 300;
-    line-height: 1;
+    line-height: 1.2;
 	margin: 0; padding: 0;
 	-webkit-margin-before: 0;
     -webkit-margin-after: 0;
@@ -113,46 +112,42 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 body {
-    color: #333333;
-    line-height: 23px;
     background: #f4f4f4;
-    font-weight: 300;
 }
 #global-container {
-  width: 80%;
-  max-width: 1000px;
-  background: white;
-  margin: 30px auto 40px auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 95%;
+    background: white;
+    margin: 1rem auto 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .front-page #global-content {
-  padding: 0;
+    padding: 0;
 }
 .front-page #global-content #main-content {
-  width: 100%;
-  float: none;
+    width: 100%;
+    float: none;
 }
 .front-page .homepage-content {
-  padding: 60px 100px;
+    padding: 60px 100px;
 }
 
 /*--------------------------------------------------------------
 # alignments
 --------------------------------------------------------------*/
 .alignleft {
-  float: left;
-  margin: 0 25px 5px 0;
-  max-width: 50%;
+    float: left;
+    margin: 0 25px 5px 0;
+    max-width: 50%;
 }
 .alignright {
-  float: right;
-  margin: 0 0 5px 25px;
-  max-width: 50%;
+    float: right;
+    margin: 0 0 5px 25px;
+    max-width: 50%;
 }
 .aligncenter {
-  display: block;
-  margin: 25px auto;
-  text-align: center;
+    display: block;
+    margin: 25px auto;
+    text-align: center;
 }
 /*--------------------------------------------------------------
 # header
@@ -171,15 +166,12 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0 0 10px 0;
 }
 h1 {
-  font-size: 30px;
   line-height: 1.4em;
 }
 h2 {
-  font-size: 25px;
   line-height: 1.4em;
 }
 h3 {
-  font-size: 15px;
   line-height: 1.4em;
   color: #333333;
 }
@@ -188,19 +180,25 @@ h3 {
   text-align: center;
 }
 #main-header .site-title {
-  margin: 0;
-  font-size: 20px;
+    font-size: 3rem;
+    margin: 0;
 }
 #main-header .site-description {
-  color: #b3b3b3;
-  margin: 0;
-  font-size: 14px;
+    font-size: 1.5rem;
+    color: #b3b3b3;
+    margin: 0;
 }
 /*--------------------------------------------------------------
 # nav
 --------------------------------------------------------------*/
 #main-nav {
-  background: #4d4d4d;
+    background: #4d4d4d;
+    line-height: 0;
+    height: 2.5rem;
+}
+#main-nav, .menu{
+    line-height: 1;
+    height: 2.5rem;
 }
 
 /* #links ----------------------------------------------------*/
@@ -238,8 +236,6 @@ a.btn:hover {
   margin: 0;
   padding: 0;
   list-style: none;
-  line-height: 20px;
-  line-height: 2.0rem;
   background: none;
 }
 .menu {
@@ -247,14 +243,14 @@ a.btn:hover {
 }
 .menu li {
   display: inline-block;
-  line-height: 40px;
   position: relative;
 }
 .menu li a {
-  display: block;
-  padding: 0 20px;
-  color: white;
-  text-decoration: none;
+    color: white;
+    display: block;
+    line-height: 1;
+    padding: 0.75rem 20px;
+    text-decoration: none;
 }
 .menu li a:hover {
   background: #7ab94c;
@@ -461,13 +457,14 @@ input[type="submit"]:hover {
 # footer
 --------------------------------------------------------------*/
 #main-footer {
-  background: #4d4d4d;
-  color: white;
+    background: #4d4d4d;
+    color: white !important;
 }
 #main-footer .footer-copyright {
-  padding: 40px;
-  background: #333333;
-  text-align: center;
+    background: #333333;
+    color: white !important;
+    padding: 40px;
+    text-align: center;
 }
 
 /*--------------------------------------------------------------
