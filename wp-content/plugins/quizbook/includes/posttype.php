@@ -1,4 +1,6 @@
 <?php
+//if(! define('ABSPATH')) exit;
+/* Para que no puedan acceder a este archivo colocando la url */
 function quizbook_post_type() {
     $labels = array(
         'name'                  => _x( 'Quiz', 'Post type general name', 'quizbook' ),
