@@ -13,4 +13,9 @@ Text Domain:  quizbook
 
 /* Añado el post type de mi plugin */
 require_once plugin_dir_path(__FILE__) . 'includes/posttype.php';
+
+/*
+* Regerera las reglas de las URLS al activar
+*/
+register_activation_hook(__FILE__, 'quizbook_rewrite_flush');
 ?>
