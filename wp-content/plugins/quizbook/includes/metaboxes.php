@@ -58,6 +58,22 @@ function quizbook_metaboxes(){ ?>
                 <input type="text" id="respuesta_5" name="qb_respuesta_5" class="regular-text">
             </td>
         </tr>
+        <tr>
+            <th class="row-title">
+                <label for="respuesta_correcta">Respuesta correcta</label>
+            </th>
+            <td>
+                <select id="respuesta_correcta" name="quizbook_correcta" class="postbox">
+                    <option value="">Elige la respuesta correcta</option>
+                    <option value="qb_correcta:a">a</option>
+                    <option value="qb_correcta:b">b</option>
+                    <option value="qb_correcta:c">c</option>
+                    <option value="qb_correcta:d">d</option>
+                    <option value="qb_correcta:e">e</option>
+                    
+                </select>
+            </td>
+        </tr>
     </table>
 <?php
 }
