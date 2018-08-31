@@ -24,4 +24,3 @@ register_activation_hook(__FILE__, 'quizbook_rewrite_flush');
 */
 require_once plugin_dir_path(__FILE__) . 'includes/metaboxes.php';
 ?>
-?>

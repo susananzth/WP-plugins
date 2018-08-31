@@ -1,5 +1,5 @@
 <?php
-//if(! define('ABSPATH')) exit;
+if(! defined('ABSPATH')) exit;
 /* Para que no puedan acceder a este archivo colocando la url */
 function quizbook_post_type() {
     $labels = array(
