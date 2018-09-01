@@ -26,12 +26,16 @@ require_once plugin_dir_path(__FILE__) . 'includes/metaboxes.php';
 /*
 * Añade Roles a los Quizes
 */
-require_once plugin_dir_path(__FILE__) . 'includes/roles.php';
-register_activation_hook(__FILE__, 'quizbook_crear_role');
-register_desactivation_hook(__FILE__, 'quizbook_remove_role');
+require_once plugin_dir_path( __FILE__ ) . 'includes/roles.php';
+register_activation_hook( __FILE__, 'quizbook_crear_role' );
+register_deactivation_hook( __FILE__, 'quizbook_remover_role' );
 /*
 * Añade capabilities a los Quizes
 */
 register_activation_hook( __FILE__, 'quizbook_agregar_capabilities' );
 register_deactivation_hook( __FILE__, 'quizbook_remover_capabilities' );
+/*
+* Añade Shortcode
+*/
+require_once plugin_dir_path(__FILE__) . 'includes/shortcode.php';
 ?>
