@@ -38,16 +38,17 @@ function quizbook_post_type() {
         'show_in_menu'       => true,
         'query_var'          => true,
         'rewrite'            => array( 'slug' => 'quizes' ),
-        'capability_type'    => 'post',
+        'capability_type'    => array('quiz', 'quizes'),
         /* Posicion en la que se muestra en el menú de wordpress */
         'menu_position'      => 6,
         /* Ícono */
         'menu_icon'          => 'dashicons-welcome-learn-more',
-        'has_archive'        => true,
+        'has_archive'        => false,
         /* Si quiero que se muestre por orden de más nuevo a más viejo o por herarquía */
         'hierarchical'       => false,
         /* Los diferentes elementos que se muestran en el editor */
         'supports'           => array( 'title', 'editor'),
+        'map_meta_cap'       => true
     );
     /* Le doy nombre al plugin y le paso los argumentos */
     register_post_type( 'quizes', $args );
