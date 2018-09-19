@@ -18,11 +18,20 @@ function quizbook_shortcode(){
                     <li data-pregunta="<?php echo get_the_ID(); ?>">
                         <?php the_title('<h2>', '</h2>'); ?>
                         <?php the_content(); ?>
+                        <?php $opciones = get_post_meta(get_the_ID());
+                              foreach($opciones as $llave => $opcion){
+                                  $resultado = quizbook_filtrar_preguntas($llave);
+                                  echo "<pre>";
+                                  var_dump($resultado);
+                                  echo "</pre>";
+                              }
+                        ?>
+                        
+                        <pre><?php var_dump($opciones); ?></pre>
                     </li>
                 <?php endwhile; wp_reset_postdata(); ?>
             </ul>
         </div>
-    </form><!-- form -->
 <?php
 }
 add_shortcode('quizbook', 'quizbook_shortcode')

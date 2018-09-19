@@ -38,4 +38,8 @@ register_deactivation_hook( __FILE__, 'quizbook_remover_capabilities' );
 * Añade Shortcode
 */
 require_once plugin_dir_path(__FILE__) . 'includes/shortcode.php';
+/*
+* Añade Las Funciones
+*/
+require_once plugin_dir_path(__FILE__) . 'includes/funciones.php';
 ?>
