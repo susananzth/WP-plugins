@@ -152,8 +152,6 @@ body {
 # header
 --------------------------------------------------------------*/
 .front-page .homepage-header {
-  background: url(../img/header-home.jpg) left center no-repeat #7ab94c;
-  background-size: cover;
   text-align: center;
   padding: 80px;
   color: white;
@@ -182,19 +180,28 @@ h3 {
     background-size: cover;
     height: 600px;
     position: relative;
+    overflow: hidden;
     width: 100%;
     z-index: 1;
 }
-#main-header .site-title {
-    display: inline-block;
-    font-size: 3rem;
+.info-page{
+    margin-left: 9rem;
+    color: #b3b3b3;
+}
+.logo{
+    background: url(img/01.png);
+    margin-left: 1rem;
     margin-top: 1rem;
-    margin-left: 2rem;
+    width: 251px;
+    height: 100px;
+}
+#main-header .site-title {
+    display: none;
+    font-size: 3rem;
+
 }
 #main-header .site-description {
     display: inline-block;
-    font-size: 1.5rem;
-    color: #b3b3b3;
 }
 figcaption,figure {
     display: inline-block;
@@ -488,19 +495,42 @@ input[type="submit"]:hover {
   
 }
 @media only screen and (max-width: 1130px) {
+    .logo{
+        width: 250px;
+        height: 100px;
+    }
   
 }
 @media only screen and (max-width: 992px) {
+    .logo{
+        width: 210px;
+        height: 90px;
+    }
   
 }
 @media only screen and (max-width: 768px) {
-  #main-content,
-  #sidebar {
-    width: 100%;
-    float: none;
-  }
+    .logo{
+        width: 210px;
+        height: 90px;
+    }
+    #main-content,
+    #sidebar {
+        width: 100%;
+        float: none;
+    }
 }
 @media only screen and (max-width: 480px) {
+    .logo{
+        width: 110px;
+        height: 50px;
+    }
+  
+}
+@media only screen and (max-width: 360px) {
+    .logo{
+        width: 90px;
+        height: 40px;
+    }
   
 }
 

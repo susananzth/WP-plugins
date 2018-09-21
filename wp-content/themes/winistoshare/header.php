@@ -21,17 +21,29 @@
 </head>
 <body>
 	<div id="global-container">
-        <nav id="main-nav">
-			<ul class="menu">
-                <?php wp_list_pages('title_li='); ?>
-				<!-- Llamo a la función para que liste las páginas, con el parámetro indico que no quiero colocar un menu-title | I call the function to list the pages, with the parameter indicated that I do not want to put a menu-title -->
-			</ul>
-		</nav><!-- /#main-nav -->
+        <div id="sideNav" class="sideNav">
+            <span class="drop">
+            
+            </span>
+            <nav id="main-nav" class="main-nav">
+                <span class="closebtn"></span>
+
+                    <ul class="menu">
+                        <?php wp_list_pages('title_li='); ?>
+                        <!-- Llamo a la función para que liste las páginas, con el parámetro indico que no quiero colocar un menu-title | I call the function to list the pages, with the parameter indicated that I do not want to put a menu-title -->
+                    </ul>
+
+            </nav><!-- /#main-nav -->
+        </div>
 		<header id="main-header">
-            <figure>
-                <img alt="Win Tecnologies INC logo" class="logo">
-            </figure>
-            <div>
+            <a href="#">
+                <div class="logo">
+                </div>
+                <!--<figure>
+                    <img src="img/cropped-logo3.png" alt="Win Tecnologies INC logo" title="Win Tecnologies INC logo" class="logo">
+                </figure> -->
+            </a>
+            <div class="info-page">
                 <h1 class="site-title"> <?php bloginfo('name'); ?> </h1>
                 <!-- Obtengo el título de la página y lo imprimo | I get the title of the page and print it -->
                 <h2 class="site-description"> <?php bloginfo('description'); ?> </h2>
