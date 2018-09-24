@@ -19,23 +19,22 @@
     <!-- Aquí llamo los script para cargar y ejecutar todas las funciones de cabecera. |
          I call the script to load and execute all the header functions.-->
 </head>
-<body>
+<body id="body">
 	<div id="global-container">
-        <div id="sideNav" class="sideNav">
-            <span class="drop">
-            
-            </span>
-            <nav id="main-nav" class="main-nav">
-                <span class="closebtn"></span>
-
-                    <ul class="menu">
+		<header id="main-header">
+            <nav id="nav" class="nav">
+                <span class="menubtn icon-menu"></span>
+                <div id="sideNav" class="sideNav">
+                    <span class="closebtn icon-cross"></span>
+                    <div class="menu">
+                        <!--<a href="#">About</a> -->
+                        <ul>
                         <?php wp_list_pages('title_li='); ?>
                         <!-- Llamo a la función para que liste las páginas, con el parámetro indico que no quiero colocar un menu-title | I call the function to list the pages, with the parameter indicated that I do not want to put a menu-title -->
                     </ul>
-
-            </nav><!-- /#main-nav -->
-        </div>
-		<header id="main-header">
+                    </div>
+                </div>
+            </nav><!-- /#nav -->
             <a href="#">
                 <div class="logo">
                 </div>

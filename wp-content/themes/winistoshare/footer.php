@@ -8,6 +8,7 @@
 	</div><!-- /#global-container -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/script.js"></script>
+
     
     <?php wp_footer(); ?>
     <!-- Aquí llamo los script para cargar y ejecutar todas las funciones al final del footer. |
