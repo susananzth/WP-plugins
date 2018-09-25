@@ -145,6 +145,9 @@ body {
 .noscroll-body{ 
   overflow:hidden; 
 }
+.fullwidth{
+    
+}
 
 /*--------------------------------------------------------------
 # alignments
@@ -494,6 +497,15 @@ input[type="submit"]:hover {
     color: white !important;
     padding: 40px;
     text-align: center;
+}
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-youtube:before {
+  content: "\e901";
+}
+.icon-mail_outline:before {
+  content: "\e0e1";
 }
 
 /*--------------------------------------------------------------
