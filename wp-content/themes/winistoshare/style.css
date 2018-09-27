@@ -145,9 +145,6 @@ body {
 .noscroll-body{ 
   overflow:hidden; 
 }
-.fullwidth{
-    
-}
 
 /*--------------------------------------------------------------
 # alignments
@@ -189,7 +186,7 @@ h2 {
 }
 h3 {
   line-height: 1.4em;
-  color: #333333;
+  /*color: #333333;*/
 }
 #main-header {
     background: url(img/fondo1.png) no-repeat center center; 
@@ -204,7 +201,7 @@ h3 {
     z-index: 1;
 }
 .info-page{
-    margin-left: 9rem;
+    margin-left: 8rem;
     color: #b3b3b3;
 }
 .logo{
@@ -214,14 +211,13 @@ h3 {
     width: 251px;
     height: 100px;
 }
-
-#main-header .site-title {
+.site-title {
     display: none;
     font-size: 3rem;
-
 }
-#main-header .site-description {
+.site-description {
     display: inline-block;
+    font-family: 'Lato', sans-serif;
 }
 figcaption,figure {
     display: inline-block;
@@ -229,7 +225,9 @@ figcaption,figure {
 /*--------------------------------------------------------------
 # nav
 --------------------------------------------------------------*/
-
+nav{
+    background: rgb(23,23,23,0.7);
+}
 
 /* #links ----------------------------------------------------*/
 a{
@@ -343,16 +341,16 @@ a.btn:hover {
 # section
 --------------------------------------------------------------*/
 #global-content {
-  padding: 40px;
+    padding: 40px;
 }
 #main-content {
-  width: 60%;
-  float: left;
-  margin-bottom: 30px;
+    width: 60%;
+    float: left;
+    margin-bottom: 30px;
 }
 #main-content.fullwidth {
-  width: 100%;
-  float: none;
+    width: 100%;
+    float: none;
 }
 /*--------------------------------------------------------------
 # article
@@ -495,7 +493,7 @@ input[type="submit"]:hover {
 #main-footer .footer-copyright {
     background: #333333;
     color: white !important;
-    padding: 40px;
+    padding: 3vh;
     text-align: center;
 }
 .icon-facebook:before {
@@ -507,7 +505,32 @@ input[type="submit"]:hover {
 .icon-mail_outline:before {
   content: "\e0e1";
 }
-
+/*--------------------------------------------------------------
+# tampleta fullwidth
+--------------------------------------------------------------*/
+#main-header-fullwidth {
+    background: url(img/fondo4d.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 35vh;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+}
+.logo-fullwidth{
+    background: url(img/02.png) center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 211px;
+    height: 91px;
+}
+#global-content-fullwidth{
+    min-height: 58vh;
+    padding: 40px;
+}
 /*--------------------------------------------------------------
 # media query
 --------------------------------------------------------------*/
@@ -516,13 +539,34 @@ input[type="submit"]:hover {
 }
 @media only screen and (max-width: 1130px) {
     #main-header {
-        background: url(img/fondo2.png) no-repeat center center; 
+        background: url(img/fondo3.png) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
     .logo{
         width: 250px;
         height: 100px;
     }
-  
+    /*---------- FULLWIDTH ----------*/
+    #main-header-fullwidth {
+        background: url(img/fondo4e.png) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 25vh;
+    }
+    .logo-fullwidth{
+        background: url(img/02.png) center;
+        width: 211px;
+        height: 91px;
+    }
+    #global-content-fullwidth{
+        min-height: 58vh;
+        padding: 40px;
+    }
 }
 @media only screen and (max-width: 992px) {
     /*---------- LOGO ----------*/
@@ -593,11 +637,34 @@ input[type="submit"]:hover {
         font-size: 1.5rem;
         margin: 0 auto;
     }
-  
+    #main-footer .footer-copyright {
+        padding: 2vh;
+    }
+    /*---------- FULLWIDTH ----------*/
+    #main-header-fullwidth {
+        background: url(img/fondo4e.png) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30vh;
+    }
+    .logo-fullwidth{
+        background: url(img/03.png) center;
+        width: 110px;
+        height: 50px;
+    }
+    #global-content-fullwidth{
+        min-height: 60vh;
+        padding: 40px;
+    }
 }
 @media only screen and (max-width: 768px) {
     #main-header {
-        background: url(img/fondo3.png) no-repeat; 
+        background: url(img/fondo3.png) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
     }
     .logo{
@@ -612,10 +679,30 @@ input[type="submit"]:hover {
         width: 100%;
         float: none;
     }
+    #main-footer .footer-copyright {
+        padding: 2vh;
+    }
+    /*---------- FULLWIDTH ----------*/
+    #main-header-fullwidth {
+        background: url(img/fondo4e.png) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30vh;
+    }
+    #global-content-fullwidth{
+        min-height: 55vh;
+        padding: 40px;
+    }
 }
 @media only screen and (max-width: 480px) {.
     #main-header {
-        background: url(img/fondo3.png) no-repeat; 
+        background: url(img/fondo3.png) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
     .logo{
         background: url(img/04.png) center;
@@ -629,6 +716,10 @@ input[type="submit"]:hover {
     }
     #main-header .site-title {
         font-size: 1rem;
+    }
+    /*---------- FULLWIDTH ----------*/
+    #main-header-fullwidth {
+        height: 25vh;
     }
   
 }
