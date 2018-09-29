@@ -91,11 +91,11 @@ template{display: none;}
 }
 @font-face {
   font-family: 'icomoon';
-  src:  url('font/icomoon.eot?m27s3b');
-  src:  url('font/icomoon.eot?m27s3b#iefix') format('embedded-opentype'),
-    url('font/icomoon.ttf?m27s3b') format('truetype'),
-    url('font/icomoon.woff?m27s3b') format('woff'),
-    url('font/icomoon.svg?m27s3b#icomoon') format('svg');
+  src:  url('font/icomoon.eot?ppnzzd');
+  src:  url('font/icomoon.eot?ppnzzd#iefix') format('embedded-opentype'),
+    url('font/icomoon.ttf?ppnzzd') format('truetype'),
+    url('font/icomoon.woff?ppnzzd') format('woff'),
+    url('font/icomoon.svg?ppnzzd#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -163,6 +163,9 @@ body {
     display: block;
     margin: 25px auto;
     text-align: center;
+}
+.text-left{
+    text-align: left !important;
 }
 /*--------------------------------------------------------------
 # header
@@ -241,7 +244,7 @@ a{
 }
 a:hover {
   color: #fcb737;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a.btn {
   background: #fcb737;
@@ -344,13 +347,36 @@ a.btn:hover {
     padding: 40px;
 }
 #main-content {
-    width: 60%;
-    float: left;
     margin-bottom: 30px;
 }
 #main-content.fullwidth {
     width: 100%;
     float: none;
+}
+.post-title > h1{
+    display: none;
+}
+.post-title > small{
+    display: none;
+}
+.register{
+    
+}
+.icon-shield:before {
+    content: "\e902";
+}
+.icon-directions_car:before {
+    content: "\e531";
+}
+.icon-monetization_on:before {
+    content: "\e263";
+}
+.icon-shield, .icon-directions_car, .icon-monetization_on{
+    font-family: 'icomoon';
+    color: black;
+    display: block;
+    font-size: 3rem;
+    margin: 0 auto; 
 }
 /*--------------------------------------------------------------
 # article
@@ -487,14 +513,21 @@ input[type="submit"]:hover {
 # footer
 --------------------------------------------------------------*/
 #main-footer {
-    background: #4d4d4d;
+    background: #333333;
     color: white !important;
 }
 #main-footer .footer-copyright {
-    background: #333333;
-    color: white !important;
     padding: 3vh;
     text-align: center;
+}
+.contact{
+    padding: 5% 5% 0 5%;
+}
+.contacto{
+    padding: 0 5% 0 5%;
+}
+footer > div > div > div > a{
+    color: white;
 }
 .icon-facebook:before {
   content: "\e900";
@@ -504,6 +537,50 @@ input[type="submit"]:hover {
 }
 .icon-mail_outline:before {
   content: "\e0e1";
+}
+.icon-room:before {
+  content: "\e8b4";
+}
+.icon-mail_outline, .icon-youtube, .icon-facebook, .icon-room{
+    font-family: 'icomoon';
+    color: white;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 auto; 
+}
+/*--------------------------------------------------------------
+# columns
+--------------------------------------------------------------*/
+.row{
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    height: auto;
+    width: auto;
+}
+.col-1{
+    width: 100%;
+    text-align: center;
+}
+.col-2{
+    width: 50%;
+    text-align: center;
+}
+.col-3{
+    width: 33.3%;
+    text-align: center;
+}
+.col-12,.col-11,.col-10,.col-9,.col-8,.col-7,.col-6,.col-5,.col-4,.col-3,.col-2,.col-1{
+    box-sizing: border-box;
+    height: auto;
+    margin: 0;
+}
+.col-padding-1{
+    padding: 1%;
+}
+.col-padding-2{
+    padding: 5% 2%;
 }
 /*--------------------------------------------------------------
 # tampleta fullwidth
@@ -585,8 +662,8 @@ input[type="submit"]:hover {
     }
     /*---------- MENU ----------*/
     .menu{
-        font-size: 1.8rem;
-        padding-top: 7rem;
+        font-size: 1.5rem;
+        padding-top: 2rem;
     }
     .menu li{
         display: block;
@@ -622,7 +699,7 @@ input[type="submit"]:hover {
     .sideNav .closebtn {
         position: absolute;
         right: 1rem;
-        top: 4rem;
+        top: 2.5rem;
     }
     .icon-menu:before {
         content: "\e3c7";
@@ -721,6 +798,9 @@ input[type="submit"]:hover {
     #main-header-fullwidth {
         height: 25vh;
     }
+    .col-xs{
+        width: 100% !important;
+    }
   
 }
 @media only screen and (max-width: 360px) {
@@ -747,6 +827,9 @@ input[type="submit"]:hover {
 img {
   max-width: 100%;
   height: auto;
+}
+li{
+    list-style:none;
 }
 .cf:before,
 .cf:after {
@@ -781,4 +864,16 @@ table thead {
 }
 .wp-caption {
   max-width: 100%;
+}
+
+
+
+
+.icon-insert_invitation:before {
+  content: "\e24f";
+}
+
+
+.icon-verified_user:before {
+  content: "\e8e8";
 }

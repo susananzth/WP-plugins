@@ -15,7 +15,6 @@
 	<title> <?php wp_title(' | ', true, 'right') ?> <?php bloginfo('name'); ?> </title><!-- Susana's Theme WordPress | by Susana Piñero -->
             <!-- Imprimo el título de wordpress, coloco un separador, verdadero para que se imprima, lo ajusto a la derecha. Con bloginfo, obtengo el titulo de la página. |
             I print the wordpress title, I put a separator, true to be printed, I adjust it to the right. With bloginfo, I get the title of the page. -->
-	
     <?php wp_head(); ?>
     <!-- Aquí llamo los script para cargar y ejecutar todas las funciones de cabecera. |
          I call the script to load and execute all the header functions.-->
@@ -30,7 +29,7 @@
                     <div class="menu">
                         <!--<a href="#">About</a> -->
                         <ul>
-                        <?php wp_list_pages('title_li='); ?>
+                        <?php wp_nav_menu( array('menu' => 'Main Menu') ); ?>
                         <!-- Llamo a la función para que liste las páginas, con el parámetro indico que no quiero colocar un menu-title | I call the function to list the pages, with the parameter indicated that I do not want to put a menu-title -->
                     </ul>
                     </div>
@@ -49,8 +48,6 @@
                 <h2 class="site-description"> <?php bloginfo('description'); ?> </h2>
                 <!-- Obtengo la descripción de la página y lo imprimo | I get the description of the page and print it -->
             </div>
-			
 		</header><!-- /#main-header -->
-		
 		<section id="global-content" class="cf">
             
