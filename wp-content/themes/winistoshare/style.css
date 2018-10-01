@@ -119,9 +119,9 @@ body {
     background: #f4f4f4;
 }
 #global-container {
-    background: white;
+    background: #212020;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    color: #333333;
+    color: white;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 300;
@@ -163,6 +163,12 @@ body {
     display: block;
     margin: 25px auto;
     text-align: center;
+}
+.text-center{
+    text-align: center !important;
+}
+.text-justify{
+    text-align: justify !important;
 }
 .text-left{
     text-align: left !important;
@@ -234,7 +240,7 @@ nav{
 
 /* #links ----------------------------------------------------*/
 a{
-    color: #333333;
+    color: white;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
@@ -320,7 +326,7 @@ a.btn:hover {
 --------------------------------------------------------------*/
 #sidebar {
   width: 35%;
-  float: right;
+  margin: 0 auto;
 }
 .widget {
   margin: 0 0 30px 0;
@@ -347,11 +353,12 @@ a.btn:hover {
     padding: 40px;
 }
 #main-content {
-    margin-bottom: 30px;
+    margin-bottom: 5%;
 }
 #main-content.fullwidth {
-    width: 100%;
     float: none;
+    margin-bottom: 5%;
+    width: 100%;
 }
 .post-title > h1{
     display: none;
@@ -373,7 +380,6 @@ a.btn:hover {
 }
 .icon-shield, .icon-directions_car, .icon-monetization_on{
     font-family: 'icomoon';
-    color: black;
     display: block;
     font-size: 3rem;
     margin: 0 auto; 
@@ -513,7 +519,7 @@ input[type="submit"]:hover {
 # footer
 --------------------------------------------------------------*/
 #main-footer {
-    background: #333333;
+    background: #000;
     color: white !important;
 }
 #main-footer .footer-copyright {
@@ -543,7 +549,6 @@ footer > div > div > div > a{
 }
 .icon-mail_outline, .icon-youtube, .icon-facebook, .icon-room{
     font-family: 'icomoon';
-    color: white;
     display: inline-block;
     font-size: 1rem;
     margin: 0 auto; 
@@ -801,16 +806,13 @@ footer > div > div > div > a{
     .col-xs{
         width: 100% !important;
     }
-  
 }
 @media only screen and (max-width: 360px) {
     .logo{
         width: 90px;
         height: 40px;
     }
-  
 }
-
 .border-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

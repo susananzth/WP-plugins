@@ -6,7 +6,7 @@
                 </div>
                 <div class="row contacto">
                     <div class="col-3 col-xs col-padding-1 text-left">
-                        <a href="facebook.com" target="_blank" type="text/html">
+                        <a href="https://www.facebook.com/WinPeru-Oficial-176076053110785/" target="_blank" type="text/html">
                             <span class="icon-facebook"></span>
                             Facebook.com
                         </a>
@@ -24,7 +24,7 @@
                         </a>
                     </div>
                     <div class="col-1 col-xs col-padding-1 text-left">
-                        <a href="maps" target="_top" type="text/html">
+                        <a href="https://www.google.co.ve/maps/@-11.9958796,-77.0780084,19.75z?hl=es" target="_top" type="text/html">
                             <span class="icon-room"></span>
                             Urb. Covida, Jr Pataz #1253. Los Olivos. Lima, Perú
                         </a>
