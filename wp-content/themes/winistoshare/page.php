@@ -15,15 +15,5 @@
 					</div>
 				</article>	<!-- article -->
 				<?php endwhile; endif; ?>
-                <div id="comments-area">
-				
-					<?php comments_template(); ?>
-                    <!-- Con esta función cargo la caja para dejar comentarios. -->
-				
-				</div><!-- #comments-area -->
-                
-			</section><!-- /#main-content -->
-			
-			<?php get_sidebar(); ?><!-- Call to sidebar partial -->
-			
+			</section><!-- /#main-content -->		
 <?php get_footer(); ?><!-- Call to footer partial -->

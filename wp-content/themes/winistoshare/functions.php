@@ -27,4 +27,3 @@ add_action('widgets_init', 'apk_register_sidebar');
         /* Asocio la función a la acción 'widgets_init'. |
         I associate the function to the action 'widgets_init' */
 ?>
-     

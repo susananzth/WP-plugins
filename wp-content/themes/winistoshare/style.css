@@ -4,7 +4,7 @@ Theme URI: http://winistoshare.com
 Author: Susana Nazareth Piñero Rodríguez
 Author URI: http://susananzth.com
 Description: Este es un tema creado para uso de la empresa WIN TECNOLOGIES INC S.A.
-Version: 1.0
+Version: 1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: win, taxiwin, wakiy
@@ -83,12 +83,6 @@ template{display: none;}
 /*--------------------------------------------------------------
 # *, html, body
 --------------------------------------------------------------*/
-@font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    src: local('RobotoMono-Light'), local('RobotoMono-Light'), url("../font/RobotoMono-Light.ttf")
-    format('truetype');
-}
 @font-face {
   font-family: 'icomoon';
   src:  url('font/icomoon.eot?ppnzzd');
@@ -325,6 +319,7 @@ a.btn:hover {
 # sidebar
 --------------------------------------------------------------*/
 #sidebar {
+    color: black !important;
   width: 35%;
   margin: 0 auto;
 }
@@ -383,6 +378,9 @@ a.btn:hover {
     display: block;
     font-size: 3rem;
     margin: 0 auto; 
+}
+.padding-5{
+    padding: 0 10%;
 }
 /*--------------------------------------------------------------
 # article
@@ -464,7 +462,7 @@ input[type="number"],
 input[type="search"],
 textarea,
 select {
-  width: 100%;
+  width: 50%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -514,13 +512,21 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: #dea02d;
 }
-
+.tml {
+    width: 50%;
+    margin: 0 auto;
+    border: solid 2px white;
+    padding: 2%;
+    box-shadow: 2px 2px 5px #fcb737;
+    border-radius: 8px;
+}
 /*--------------------------------------------------------------
 # footer
 --------------------------------------------------------------*/
 #main-footer {
     background: #000;
     color: white !important;
+    font-size: 0.8rem;
 }
 #main-footer .footer-copyright {
     padding: 3vh;
@@ -777,6 +783,9 @@ footer > div > div > div > a{
         min-height: 55vh;
         padding: 40px;
     }
+    .tml {
+        width: 70%;
+    }
 }
 @media only screen and (max-width: 480px) {.
     #main-header {
@@ -805,6 +814,9 @@ footer > div > div > div > a{
     }
     .col-xs{
         width: 100% !important;
+    }
+    .tml {
+        width: 80%;
     }
 }
 @media only screen and (max-width: 360px) {
@@ -859,7 +871,6 @@ table thead {
   color: white;
   text-transform: uppercase;
 }
-
 .wp-caption-text {
   margin: 0 0 10px 0;
   font-size: 12px;
@@ -867,15 +878,9 @@ table thead {
 .wp-caption {
   max-width: 100%;
 }
-
-
-
-
 .icon-insert_invitation:before {
   content: "\e24f";
 }
-
-
 .icon-verified_user:before {
   content: "\e8e8";
 }

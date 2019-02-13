@@ -12,6 +12,7 @@ add_action('add_meta_boxes', 'quizbook_agregar_metaboxes');
 * Muestra el contenido HTML de los metaboxes
 */
 function quizbook_metaboxes($post){ 
+    /* nonce, es un dígito que wordpress genera como especie de token. Dura 24 horas */
     wp_nonce_field(basename(__FILE__), 'quizbook_nonce');
 ?>
     <table class="fomr-table">

@@ -14,15 +14,6 @@
 					</div>
 				</article>	<!-- article -->
                 <?php endwhile; else: ?>
-                <article class="post resume">
-					<header class="post-title">
-						<h2><?php _e('No hay comentarios para mostrar'); ?></h2>
-					</header>
-					<div class="post-content">
-						<p><?php _e('No hay contenido que correspondan con esta página, por favor realizar una búsqueda para encontrar lo que desea ver:', 'win'); ?></p>
-                        <?php get_search_form(); ?>
-					</div>
-				</article>	<!-- article -->
                 <?php endif; ?>
                 <?php if( get_next_posts_link() || get_previous_posts_link() ) { ?>
                     <div class="posts-nav cf">
@@ -30,7 +21,5 @@
                         <?php previous_posts_link( __('Recientes &rarr;', 'win')); ?>
                     </div>
                 <?php } ?>
-			</section><!-- /#main-content -->
-			<?php get_sidebar(); ?><!-- Call to sidebar partial -->
-			
+			</section><!-- /#main-content -->	
 <?php get_footer(); ?><!-- Call to footer partial -->

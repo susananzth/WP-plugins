@@ -23,4 +23,5 @@ template name: Inicio
             </div>
         </div>
     </section><!-- /#main-content -->
+    <?php get_sidebar(); ?><!-- Call to sidebar partial -->
 <?php get_footer(); ?><!-- Call to footer partial -->
